@@ -1,0 +1,113 @@
+/* 基本設定：使用柔和的市集鄉村風配色 */
+body {
+    font-family: "Microsoft JhengHei", Arial, sans-serif;
+    background-color: #f7f5f0;
+    color: #4a3c31;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    background-color: #8dbb5e;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* 分類按鈕樣式 */
+.category-buttons button {
+    background-color: #e6dfd3;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.category-buttons button:hover {
+    background-color: #8dbb5e;
+    color: white;
+}
+
+/* 搜尋框樣式 */
+.search-section {
+    display: flex;
+    gap: 10px;
+}
+
+#searchInput {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #e6dfd3;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#searchBtn {
+    background-color: #8dbb5e;
+    color: white;
+    border: none;
+    padding: 0 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#searchBtn:hover {
+    background-color: #79a64f;
+}
+
+/* 搜尋結果卡片樣式 */
+.result-card {
+    border-left: 5px solid #8dbb5e;
+    background-color: #faf9f6;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 0 5px 5px 0;
+}
+
+.result-card h3 {
+    margin-top: 0;
+    color: #2b231d;
+    border-bottom: 1px solid #e6dfd3;
+    padding-bottom: 5px;
+}
+
+/* 詳細資料的表格排版 */
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 切成兩欄顯示 */
+    gap: 8px;
+    font-size: 14px;
+}
+
+.info-item {
+    margin-bottom: 5px;
+}
+
+.info-label {
+    font-weight: bold;
+    color: #8dbb5e;
+}
+
+.notice {
+    color: #999;
+    text-align: center;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>風之市集資料查詢站</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>風之市集 資料查詢站</h1>
+    </header>
+
+    <main>
+        <section class="category-section">
+            <h3>快速分類篩選：</h3>
+            <div class="category-buttons">
+                <button onclick="filterCategory('全部')">全部項目</button>
+                <button onclick="filterCategory('農作物')">農作物</button>
+                <button onclick="filterCategory('料理')">料理</button>
+                <button onclick="filterCategory('人物資料')">人物資料</button>
+                <button onclick="filterCategory('風車加工品')">風車加工品</button>
+                <button onclick="filterCategory('動物')">動物</button>
+                <button onclick="filterCategory('昆蟲')">昆蟲</button>
+                <button onclick="filterCategory('釣魚')">釣魚</button>
+                <button onclick="filterCategory('市集捐贈')">市集捐贈</button>
+                <button onclick="filterCategory('人物委託、事件')">人物委託、事件</button>
+                <button onclick="filterCategory('開店條件')">開店條件</button>
+                <button onclick="filterCategory('商店商品')">商店商品</button>
+                <button onclick="filterCategory('養蜂、養菇')">養蜂、養菇</button>
+                <button onclick="filterCategory('採摘物')">採摘物</button>
+                <button onclick="filterCategory('花')">花</button>
+            </div>
+        </section>
+
+        <section class="search-section">
+            <input type="text" id="searchInput" placeholder="請輸入想要查詢的關鍵字（如：香草沙拉）...">
+            <button id="searchBtn">搜尋</button>
+        </section>
+
+        <section class="result-section">
+            <h2>查詢結果</h2>
+            <div id="resultContainer">
+                <p class="notice">請在上方輸入關鍵字或點選分類開始查詢。</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
